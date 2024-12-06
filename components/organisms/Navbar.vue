@@ -1,10 +1,14 @@
 <template>
-  <div class="navbar items-center max-w-7xl mx-auto py-4">
+  <div class="navbar items-center max-w-7xl  mx-auto py-4">
     <div class="flex-1">
       <a class="btn btn-ghost text-xl">daisyUI</a>
     </div>
-    <div v-if="login === true" class="flex-none">
-      <InputSearch />
+    <div v-if="login === true" class="flex-none gap-2">
+      <InputSearch class="mr-2 hidden md:flex"/>
+      <NuxtLink to="/" class="md:inline-flex items-center hidden  gap-2">
+        <IconSquarePen  />
+        Write
+      </NuxtLink>
       <Notification />
       <ProfileSetting />
     </div>

@@ -5,15 +5,13 @@
     <div
       class="flex md:items-center justify-between flex-col-reverse md:flex-row"
     >
-      <div class="space-y-2">
-        <div class="">
-          <p>Card title!</p>
-        </div>
+      <div class="space-y-2 mt-4">
+          <p>Agus Setiawan</p>
         <div class="">
           <h2 class="text-2xl font-bold">Card title!</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
         </div>
-        <div class="">
+        <div class="pt-2">
           <p>14 minutes ago</p>
         </div>
       </div>
