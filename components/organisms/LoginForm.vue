@@ -23,7 +23,7 @@
             <form class="space-y-5">
               <FormInput label="Email" type="email" />
               <FormInput label="Password" type="password" />
-              <ButtonPrimary type="submit">Submit</ButtonPrimary>
+              <ButtonPrimary class="bg-blue-500" type="submit">Submit</ButtonPrimary>
             </form>
           </div>
         </div>

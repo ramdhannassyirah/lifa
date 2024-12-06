@@ -8,6 +8,9 @@ module.exports = {
     "./app.vue",
     "./error.vue",
   ],
+  daisyui: {
+    themes: [ 'light'],
+  },
   theme: {
     extend: {
       boxShadow: {
@@ -24,5 +27,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }

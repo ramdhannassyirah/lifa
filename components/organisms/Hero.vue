@@ -1,21 +1,33 @@
 <template>
-    <section class="max-w-7xl mx-auto mt-10 h-dvh  ">
-        <div class="flex justify-between items-center ">
-            <div class="space-y-6">
-                <div class="">
-                    <h1 class="text-4xl font-bold">Manusia</h1>
-                    <h1 class="text-4xl font-bold">Berbagi Cerita & Ide</h1>
-                </div>
-                <p class="text-md">Tempat membaca, menulis, dan memperdalam pemahaman Anda</p>
-                <ButtonPrimary class="bg-blue-600 px-8">Ayo Bergabung </ButtonPrimary>
-            </div>
-            <div class="w-96">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
-            </div>
+    <section class="max-w-7xl mx-auto  px-4">
+      <div class="flex flex-col-reverse items-center  gap-8 md:flex-row  ">
+        <!-- Konten Teks -->
+        <div class="text-center md:text-left space-y-4 flex-1">
+          <div>
+            <h1 class="text-3xl sm:text-4xl font-bold leading-tight">Manusia</h1>
+            <h1 class="text-3xl sm:text-4xl font-bold leading-tight">Berbagi Cerita & Ide</h1>
+          </div>
+          <p class="text-sm sm:text-md text-gray-600">
+            Tempat membaca, menulis, dan memperdalam pemahaman Anda
+          </p>
+          <ButtonPrimary class="bg-blue-600 px-8 py-3 text-white text-sm sm:text-md">
+            Ayo Bergabung
+          </ButtonPrimary>
         </div>
+        
+        <!-- Gambar -->
+        <div class="flex-1 max-w-lg w-full">
+          <img 
+            src="../../assets/images/hero.png" 
+            alt="Hero" 
+            class="w-full h-auto object-cover "
+          />
+        </div>
+      </div>
     </section>
-</template>
-<script setup>
-import ButtonPrimary from '../atoms/ButtonPrimary.vue';
-
-</script>
+  </template>
+  
+  <script setup>
+  import ButtonPrimary from '../atoms/ButtonPrimary.vue';
+  </script>
+  
