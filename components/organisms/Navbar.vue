@@ -1,22 +1,29 @@
 <template>
-  <header class="  w-full  bg-white font-bold shadow-brutal p-4">
-    <div class="max-w-7xl mx-auto flex items-center flex-wrap justify-between">
-      <h1 class="text-3xl font-bold">lifa</h1>
-      <IconAlignJustify class="text-3xl lg:hidden" />
-      <Menu class="" />
+  <div class="navbar items-center max-w-7xl mx-auto py-4">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">daisyUI</a>
     </div>
-    <!-- Modal Login -->
-    <LoginForm />
-  </header>
+    <div v-if="login === true" class="flex-none">
+      <InputSearch />
+      <Notification />
+      <ProfileSetting />
+    </div>
+    <div v-if="login === false" class="space-x-2">
+      <Menu />
+      <ButtonPrimary> Login</ButtonPrimary>
+      <ButtonPrimary> Register</ButtonPrimary>
+    </div>
+  </div>
 </template>
-
 <script setup>
-import { useModal } from "~/composables/useModal";
 import ButtonPrimary from "../atoms/ButtonPrimary.vue";
+import InputSearch from "../atoms/InputSearch.vue";
+import Notification from "../atoms/Notification.vue";
+import ProfileSetting from "../atoms/ProfileSetting.vue";
 import Menu from "../molecules/Menu.vue";
-import LoginForm from "../organisms/LoginForm.vue";
-import NavbarMobile from "./NavbarMobile.vue";
 
-// Akses state global modal
-const { openModal } = useModal();
+import { reactive } from "vue";
+
+const login = reactive(true);
 </script>
+<style></style>

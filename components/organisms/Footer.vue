@@ -1,7 +1,10 @@
 <template>
-<footer class="footer footer-center bg-black text-white p-4">
-  <div class="">
-    <p>Copyright © 2023 - All right reserved by Lifa</p>
-  </div>
-</footer>
+  <footer class="footer footer-center bg-base-300 text-base-content p-4">
+    <aside>
+      <p>
+        Copyright © {new Date().getFullYear()} - All right reserved by ACME
+        Industries Ltd
+      </p>
+    </aside>
+  </footer>
 </template>

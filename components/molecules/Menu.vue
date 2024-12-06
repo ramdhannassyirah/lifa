@@ -1,17 +1,18 @@
 <template>
-  <nav class="space-x-4 hidden lg:flex flex-wrap items-center font-medium">
-    <NuxtLink to="">Tentang Kami</NuxtLink>
-    <NuxtLink to="">Panduan</NuxtLink>
-      <Button @click="openModal">Login</Button>
-      <ButtonPrimary class="bg-yellow-400 text-white" type="button">Register</ButtonPrimary>
-  </nav>
+    <nav>
+        <NavLink class="mr-4" v-for="(link, index) in links"  :key="index" 
+            :navLink="link.name"
+            :to="link.to"
+        />
+    </nav>
 </template>
-
 <script setup>
-import { useModal } from "~/composables/useModal";
-import ButtonPrimary from "../atoms/ButtonPrimary.vue";
+import { ref } from 'vue'
+import NavLink from '../atoms/NavLink.vue';
 
-// Akses state global modal
-const { openModal } = useModal();
-
+const links = ref([
+    { name: 'Tentang Kami', to: '/' },
+    { name: 'Hubungi Kami', to: '/contact' },
+    { name: 'Panduan', to: '/about' },
+]);
 </script>
