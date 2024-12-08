@@ -5,14 +5,22 @@
     <div
       class="flex md:items-center justify-between flex-col-reverse md:flex-row"
     >
-      <div class="space-y-2 mt-4">
+      <div class="space-y-2 mt-4 overflow-hidden break-all pr-8">
           <p>Agus Setiawan</p>
         <div class="">
-          <h2 class="text-2xl font-bold">Card title!</h2>
+          <h2 class="text-2xl font-bold">What is LoremIpsum!ahodhawodhuj fdergjdprj grpdgjdrigj;odirhg s;fkspoejfspefjsie fkrpwojeowjfwjfoiwf</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
         </div>
-        <div class="pt-2">
+        <div class="pt-2 flex items-center gap-6">
           <p>14 minutes ago</p>
+          <div class="flex items-center gap-1">
+            <IconHandHeart  :size="16" />
+            <p>100k</p>
+          </div>
+          <div class="flex items-center gap-1">
+            <IconMessageCircle :size="16" />
+            <p>100k</p>
+          </div>
         </div>
       </div>
       <div class="avatar">

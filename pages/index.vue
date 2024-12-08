@@ -6,5 +6,4 @@
 <script setup>
 import { ref } from "vue";
 
-const sembunyikan = ref(false);
 </script>
