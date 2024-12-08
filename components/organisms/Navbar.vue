@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar items-center max-w-7xl  mx-auto py-4">
+  <div v-if="sembunyikan === false" class="navbar items-center max-w-7xl  mx-auto py-4" :class="sembunyikan === true ? 'hidden' : ''">
     <div class="flex-1">
       <a class="btn btn-ghost text-xl">daisyUI</a>
     </div>
